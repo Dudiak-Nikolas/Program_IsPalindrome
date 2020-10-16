@@ -15,7 +15,7 @@ namespace Program
                               + "А - Провірка Цифр на паліндромність;\n"
                               + "B - Перевести Цифри в Реверс;\n"
                               + "C - Провірка Текста на паліндромність;\n"
-                              + "Q - Вихід;\n");
+                              + "Q - Вихід з програми;\n");
 
                 var input = Console.ReadKey();
 
@@ -23,7 +23,7 @@ namespace Program
                 {
                     
                    case ConsoleKey.A:
-                            Console.Write("\n Перевірка Числ на паліндромність  \n"
+                            Console.Write("\n\n Перевірка Числ на паліндромність  \n"
                                  + "--------------------------------------\n "
                                  + "Вкажіть Числа : ");
 
@@ -39,14 +39,14 @@ namespace Program
                         }
                         catch(FormatException)
                         {
-                            Console.Write("\nВи ввели не верний формат!\n\n");
+                            Console.Write("\nВи ввели не вірний формат!\n\n");
                         }
 
                             break;
                         
 
                     case ConsoleKey.B:
-                        Console.Write("\n Перевести Цифри в Реверс \n"
+                        Console.Write("\n\n Перевести Цифри в Реверс \n"
                                       + "-------------------------------\n "
                                       + "Вкажіть Цифри : ");
                         try
@@ -63,13 +63,13 @@ namespace Program
                         }
                         catch (FormatException)
                         {
-                            Console.Write("\nВи ввели не верний формат!\n\n");
+                            Console.Write("\nВи ввели не вірний формат!\n\n");
                         }
                         Console.ReadLine();
                         break;
 
                     case ConsoleKey.C:
-                        Console.Write("\n Перевірка текста на паліндромність  \n"
+                        Console.Write("\n\n Перевірка текста на паліндромність  \n"
                                 + "--------------------------------------\n "
                                 + "Вкажіть текст : ");
                         var Expo = Solution.IsFilter(Console.ReadLine());
@@ -85,8 +85,8 @@ namespace Program
                         Environment.Exit(0);
                         break;
                     default:
-                        Console.Write("\nВибрана не верная кнопка\n"
-                                        + "Чтоби продолжить нажмите клавишу: 'Enter' ");
+                        Console.Write("\n\nВибрана не вірная кнопка\n"
+                                        + "Щоб продовжити нажміть клавишу: 'Enter' ");
                         Console.ReadLine();
                         break;
                    
